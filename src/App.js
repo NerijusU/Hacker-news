@@ -37,6 +37,9 @@ export default function App() {
           </a>
         </li>
       ))}
+      <footer>
+        <small>© 2022 Nerijus Urbonas. All rights reserved.<small>
+      </footer>
     </div>
   );
 }
