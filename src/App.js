@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./styles.css";
+import Footer from './footer'
 // make a "search box" DONE
 // when user types new input, update the userSearchTerm DONE
 // when use submits, send a new fetch request that will ultimately setStories(qwdjqwodij) DONE
@@ -20,9 +21,14 @@ export default function App() {
       .then((response) => setStories(response.hits));
   };
 
+  const mystyle = {
+    background: "yellow",
+    padding: "10px"
+  }
+
   return (
     <div className="App">
-      <div style={{ background: "yellow" }}>
+      <div style={mystyle}>
         <input
           value={userSearchTerm}
           onChange={(event) => setUserSearchTerm(event.target.value)}
@@ -37,9 +43,7 @@ export default function App() {
           </a>
         </li>
       ))}
-      <footer>
-        <small>© 2022 Nerijus Urbonas. All rights reserved.<small>
-      </footer>
+      <Footer/>
     </div>
   );
 }
