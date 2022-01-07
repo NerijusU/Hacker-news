@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./styles.css";
-import Footer from './footer'
+import Footer from './footer';
+
 // make a "search box" DONE
 // when user types new input, update the userSearchTerm DONE
 // when use submits, send a new fetch request that will ultimately setStories(qwdjqwodij) DONE
