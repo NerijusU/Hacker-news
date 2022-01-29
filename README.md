@@ -1,4 +1,4 @@
-hacker-news-version.netlify.app
+https://hacker-news-version.netlify.app/
 
 # Getting Started with Create React App
 
